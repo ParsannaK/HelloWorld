@@ -1,5 +1,6 @@
 #include "MainComponent.h"
 
+
 //==============================================================================
 MainComponent::MainComponent()
 {
@@ -19,7 +20,9 @@ void MainComponent::paint (juce::Graphics& g)
 
     g.setFont (juce::Font (48.0f));
     g.setColour (juce::Colours::red);
-    g.drawText ("Hello, my name is Parsanna!", getLocalBounds(), juce::Justification::centred, true);
+    g.drawText ("Hello", getLocalBounds(), juce::Justification::centred, true);
+    g.drawRect(200, 200, 30, 30);
+    
 }
 
 void MainComponent::resized()
